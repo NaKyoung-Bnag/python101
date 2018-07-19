@@ -57,6 +57,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="ch04-read-file.html" />
+    
     
     <link rel="prev" href="ch02-hello-world.html" />
     
@@ -152,6 +154,19 @@
             
         </li>
     
+        <li class="chapter " data-level="1.6" data-path="ch04-read-file.html">
+            
+                <a href="ch04-read-file.html">
+            
+                    
+                    4장 파일 읽기
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
 
@@ -199,7 +214,7 @@
                                 
                                 <h1 id="&#xAE30;&#xBCF8;&#xAE30;-&#xB2E4;&#xC9C0;&#xAE30;">&#xAE30;&#xBCF8;&#xAE30; &#xB2E4;&#xC9C0;&#xAE30;</h1>
 <p>&#xCC45;&#xC744; &#xC4F0;&#xBA74;&#xC11C; &#xAC00;&#xC7A5; &#xACE0;&#xBBFC;&#xD55C; &#xBD80;&#xBD84;&#xC778;&#xB370;, &#xBC14;&#xB85C; &#xD504;&#xB85C;&#xADF8;&#xB798;&#xBC0D;&#xC758; &#xAE30;&#xBCF8; &#xBB38;&#xBC95; &#xD30C;&#xD2B8;&#xC774;&#xB2E4;. &#xB300;&#xBD80;&#xBD84;&#xC758; &#xC5B8;&#xC5B4;&#xAC00; &#xBE44;&#xC2B7;&#xD55C; &#xD615;&#xD0DC;&#xB97C; &#xAC00;&#xC9C0;&#xACE0; &#xC788;&#xAE30; &#xB54C;&#xBB38;&#xC5D0;, &#xD504;&#xB85C;&#xADF8;&#xB798;&#xBC0D;&#xC744; &#xD55C; &#xBC88;&#xC774;&#xB77C;&#xB3C4; &#xBC30;&#xC6CC;&#xBD24;&#xB2E4;&#xBA74; &#xC27D;&#xAC8C; &#xB118;&#xC5B4;&#xAC08; &#xC218; &#xC788;&#xB294; &#xBD80;&#xBD84;&#xC774;&#xC9C0;&#xB9CC;, &#xCC98;&#xC74C; &#xBC30;&#xC6B0;&#xB294; &#xC785;&#xC7A5;&#xC774;&#xB77C;&#xBA74; &#xC774; &#xBD80;&#xBD84;&#xC774; &#xAC00;&#xC7A5; &#xC5B4;&#xB835;&#xACE0;, &#xC9C0;&#xB8E8;&#xD55C; &#xBD80;&#xBD84;&#xC774; &#xB420; &#xC218; &#xC788;&#xB2E4;.</p>
-<p>&#xBB34;&#xC5C7;&#xBCF4;&#xB2E4; &#xB0B4;&#xAC00; &#xC774;&#xAC78; &#xC4F0;&#xACE0; &#xC788;&#xB294; &#xC774;&#xC720;&#xB294; &#xB2E4;&#xB978; &#xCC45;&#xB4E4;&#xC774; &#xCEE4;&#xBC84;&#xD558;&#xC9C0; &#xBABB;&#xD558;&#xB294; &#xBD80;&#xBD84;, &#xC989; &#xC6B0;&#xB9AC; &#xBD84;&#xC57C; &#xC5F0;&#xAD6C;&#xC640; &#xBC00;&#xC811;&#xD558;&#xAC8C; &#xAD00;&#xB828;&#xB41C; &#xC608;&#xC81C;&#xB85C; &#xC2E4;&#xC6A9;&#xC801;&#xC73C;&#xB85C; &#xC4F8; &#xC218; &#xC788;&#xB294; &#xCF54;&#xB4DC;&#xB97C; &#xD1B5;&#xD574; &#xBC30;&#xC6C0;&#xC744; &#xC804;&#xD558;&#xACE0;&#xC790; &#xD558;&#xB294; &#xAC83;&#xC778;&#xB370;, &#xAE30;&#xBCF8; &#xBB38;&#xBC95; &#xBD80;&#xBD84;&#xC740; &#xC88B;&#xC740; &#xCC45;&#xC774; &#xB108;&#xBB34; &#xB9CE;&#xB2E4;. &#xADF8;&#xB9AC;&#xACE0; &#xB0B4;&#xAC00; &#xADF8;&#xAC78; &#xC77C;&#xC77C;&#xC774; &#xC124;&#xBA85;&#xD558;&#xAE30;&#xC5D0;&#xB3C4; &#xB108;&#xBB34; &#xADC0;&#xCC2E;&#xB2E4;.</p>
+<p>&#xBB34;&#xC5C7;&#xBCF4;&#xB2E4; &#xB0B4;&#xAC00; &#xC774;&#xAC78; &#xC4F0;&#xACE0; &#xC788;&#xB294; &#xC774;&#xC720;&#xB294; &#xB2E4;&#xB978; &#xCC45;&#xB4E4;&#xC774; &#xCEE4;&#xBC84;&#xD558;&#xC9C0; &#xBABB;&#xD558;&#xB294; &#xBD80;&#xBD84;, &#xC989; &#xC6B0;&#xB9AC; &#xBD84;&#xC57C; &#xC5F0;&#xAD6C;&#xC640; &#xBC00;&#xC811;&#xD558;&#xAC8C; &#xAD00;&#xB828;&#xB41C; &#xC608;&#xC81C;&#xB85C; &#xC2E4;&#xC6A9;&#xC801;&#xC73C;&#xB85C; &#xC4F8; &#xC218; &#xC788;&#xB294; &#xCF54;&#xB4DC;&#xB97C; &#xD1B5;&#xD574; &#xBC30;&#xC6C0;&#xC744; &#xC804;&#xD558;&#xACE0;&#xC790; &#xD558;&#xB294; &#xAC83;&#xC778;&#xB370;, &#xAE30;&#xBCF8; &#xBB38;&#xBC95; &#xBD80;&#xBD84;&#xC740; &#xC88B;&#xC740; &#xCC45;&#xC774; &#xB108;&#xBB34; &#xB9CE;&#xB2E4;. &#xADF8;&#xB9AC;&#xACE0; &#xB0B4;&#xAC00; &#xADF8;&#xAC78; &#xC77C;&#xC77C;&#xC774; &#xC124;&#xBA85;&#xD558;&#xAE30;&#xC5D0;&#xB3C4; &#xB108;&#xBB34; &#xBE44;&#xD6A8;&#xC728;&#xC801;&#xC774;&#xB2E4;.</p>
 <p>&#xADF8;&#xB798;&#xC11C; &#xC774;&#xBC88; &#xC7A5;&#xC740; &#xAC04;&#xB2E8;&#xD558;&#xAC8C; &#xC694;&#xC57D; &#xC815;&#xB9AC;&#xB9CC; &#xD558;&#xACE0;, &#xB300;&#xC2E0; &#xD559;&#xC2B5;&#xD558;&#xAE30; &#xC88B;&#xC740; &#xB9C1;&#xD06C;&#xB4E4;&#xB85C; &#xB300;&#xCCB4;&#xD558;&#xACE0;&#xC790; &#xD55C;&#xB2E4;. &#xADF8;&#xB9AC;&#xACE0; &#xC880; &#xCCB4;&#xACC4;&#xC801;&#xC73C;&#xB85C; &#xBC30;&#xC6B0;&#xACE0; &#xC2F6;&#xB2E4;&#xBA74;, &#xC11C;&#xC810; &#xAC00;&#xBA74; &#xAD00;&#xB828; &#xCC45;&#xC774; &#xC218;&#xBC31;&#xAD8C;&#xC740; &#xC788;&#xC744;&#xD150;&#xB370;, &#xC77D;&#xAE30; &#xD3B8;&#xD558;&#xACE0; &#xC7AC;&#xBBF8;&#xC788;&#xC5B4; &#xBCF4;&#xC774;&#xB294; &#xAC78;&#xB85C; &#xACE8;&#xC544;&#xC11C; &#xBCF4;&#xBA74; &#xB41C;&#xB2E4;.</p>
 <h2 id="&#xACF5;&#xBD80;&#xD558;&#xAE30;-&#xC88B;&#xC740;-&#xC790;&#xB8CC;">&#xACF5;&#xBD80;&#xD558;&#xAE30; &#xC88B;&#xC740; &#xC790;&#xB8CC;</h2>
 <ul>
@@ -256,10 +271,14 @@
 
             
                 
-                <a href="ch02-hello-world.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 2장 Hello, World">
+                <a href="ch02-hello-world.html" class="navigation navigation-prev " aria-label="Previous page: 2장 Hello, World">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="ch04-read-file.html" class="navigation navigation-next " aria-label="Next page: 4장 파일 읽기">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -268,7 +287,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"3장 기본기 다지기","level":"1.5","depth":1,"previous":{"title":"2장 Hello, World","level":"1.4","depth":1,"path":"_draft/ch02-hello-world.md","ref":"_draft/ch02-hello-world.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"_draft/ch03-syntax.md","mtime":"2018-07-07T02:30:47.808Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-07-07T02:31:02.950Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"3장 기본기 다지기","level":"1.5","depth":1,"next":{"title":"4장 파일 읽기","level":"1.6","depth":1,"path":"_draft/ch04-read-file.md","ref":"_draft/ch04-read-file.md","articles":[]},"previous":{"title":"2장 Hello, World","level":"1.4","depth":1,"path":"_draft/ch02-hello-world.md","ref":"_draft/ch02-hello-world.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"_draft/ch03-syntax.md","mtime":"2018-07-19T03:25:36.411Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-07-19T05:21:11.326Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
