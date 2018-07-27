@@ -251,6 +251,8 @@ dataset = []
 
 <span class="hljs-keyword">with</span> open(filename, <span class="hljs-string">&quot;r&quot;</span>) <span class="hljs-keyword">as</span> f:
     <span class="hljs-keyword">for</span> line <span class="hljs-keyword">in</span> f:
+        <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> line.split():
+            <span class="hljs-keyword">continue</span>
         tokens = line.split()
         year = int(tokens[<span class="hljs-number">0</span>])
         month = int(tokens[<span class="hljs-number">1</span>])
@@ -274,6 +276,8 @@ dataset = []
 
 <span class="hljs-keyword">with</span> open(filename, <span class="hljs-string">&quot;r&quot;</span>) <span class="hljs-keyword">as</span> f:
     <span class="hljs-keyword">for</span> line <span class="hljs-keyword">in</span> f:
+        <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> line.split():
+            <span class="hljs-keyword">continue</span>
         tokens = line.split()
         year = int(tokens[<span class="hljs-number">0</span>])
         month = int(tokens[<span class="hljs-number">1</span>])
@@ -302,6 +306,8 @@ dataset = []
 
     <span class="hljs-keyword">with</span> open(filename, <span class="hljs-string">&quot;r&quot;</span>) <span class="hljs-keyword">as</span> f:
         <span class="hljs-keyword">for</span> line <span class="hljs-keyword">in</span> f:
+            <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> line.split():
+                <span class="hljs-keyword">continue</span>
             tokens = line.split()
             year = int(tokens[<span class="hljs-number">0</span>])
             month = int(tokens[<span class="hljs-number">1</span>])
@@ -377,7 +383,7 @@ output_dir = <span class="hljs-string">&quot;../output/python101/&quot;</span>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"6장 여러 파일 다루기","level":"1.8","depth":1,"previous":{"title":"5장 파일 쓰기","level":"1.7","depth":1,"path":"_draft/ch05-write-file.md","ref":"_draft/ch05-write-file.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"_draft/ch06-handling-files.md","mtime":"2018-07-26T04:06:02.893Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-07-26T04:07:33.850Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"6장 여러 파일 다루기","level":"1.8","depth":1,"previous":{"title":"5장 파일 쓰기","level":"1.7","depth":1,"path":"_draft/ch05-write-file.md","ref":"_draft/ch05-write-file.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"_draft/ch06-handling-files.md","mtime":"2018-07-27T06:46:20.958Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-07-27T06:46:46.564Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
